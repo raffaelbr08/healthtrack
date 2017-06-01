@@ -1,139 +1,65 @@
-body{
-	margin:0;
-	padding:0;	
-	font-family: 'Conv_Gesta W01 Regular', sans-serif!important;
-	height:auto;
-	font-size:16px;
-}
+@import url("login.css");
+@import url("profile.css");
 
-main{
-	background-image: url("../img/bg.jpg");
-	background-repeat:no-repeat;		
- 	background-position: center center;
-    background-size: cover;     
-    min-height: 100%;
-    min-width: 100%;
-    position: absolute;  
+/*side bar */
+.sidebar{
+	width:40%;
+	max-width:100px;	
+	height:100%;
+	position:fixed;
+	left:-800px;
+	transition: left .4s;	
+	top:0px;	
+	z-index:1001;	
 }
-
-.cover-bg{
-	background-color: rgba(0, 209, 172, 0.9);
-	min-height: 100%;
-    min-width: 100%;
-    position: absolute; 
-}
-
-/* TIPOGRAFY */
-h1,h2,h3,h4 {
-	font-family: 'Conv_Gesta W01 Regular', sans-serif;
-	color:#238B75;	
-	font-weight:500;
-}
-p{
-	margin:0;
-}
-
-/*GERAL COLORS*/
-.bg-blue{
-	background-color:#31B998!important;
-}
-.bg-light{
-	background-color:#32B998;
-}
-
-.red{
-	color:#FF4B4B
-}
-
-.blue{
-	color:#1CA082!important;
-}
-
-.cinza{
-	color:#535564;
-	
-}
-
-
-/*PAGINA INICIAL*/
-.logo-health{
-	width:300px;
-	margin:50px auto 50px;	
-}
-
-/*     //LOGIN FORM\\       */
-.login{
-	max-width:400px;
-	margin:60px auto;
+.sidebar .sidebar-header{
 	background-color:white;
-	padding:20px;
-	border-radius:10px;
+	height:80px;
+	width:100%;	
+	text-align:center;
+}
+.sidebar .nav{
+	flex-direction: column;	
+}
+.sidebar .nav .nav-item{
+	margin-top:30px;
+	margin-left:10px;
+	margin-right:10px;
+	border-bottom:1px solid white;			
+}
+.sidebar .nav .nav-item:hover{
+	background-color:#1CA082!important;	
+	width:110px;
+	z-index:110;	
 	-webkit-box-shadow: 7px 3px 22px -9px rgba(0,0,0,0.75);
 	-moz-box-shadow: 7px 3px 22px -9px rgba(0,0,0,0.75);
 	box-shadow: 7px 3px 22px -9px rgba(0,0,0,0.75);
+	border:none;	
+	margin-left:0!important;
+ }
+.sidebar .nav .nav-link{
+	text-align:center;	
+	margin:0px 10px;
 }
-.login p {
-	color:#535564;
+.sidebar .nav .nav-link:hover{
+	border:none;	
 }
-
-.login label{
-	font-family: 'Conv_Gesta W01 Regular', sans-serif;
-	font-size:15px;	
-	color:#4F505B;
-}
-   input{
-	border:2px solid #d4d4d4!important;
-	border-radius:5px!important;
-}
-	input:focus{
-	border:2px solid #7ECFBC!important;
-}
-	input::placeholder{
-		/*color:#d4d4d4;*/
-		font-weight: bold;
-	}
-
-.login .btn-login{	
-	width:100%;
-	font-size:17px;
-	font-family: 'Conv_Gesta W01 Regular', sans-serif;
+.sidebar .nav .nav-link i{
+	font-size:35px;
+	color:white;
 }
 
-.login .btn-login:hover{
-	background-color:#1CA082!important;
+.open-sidebar::after{
+	content:"";
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index:1000;
 }
 
-/*     //LOGIN FORM\\       */
-
-
-/*     //REGISTER FORM\\       */
-.mymodal{
-	margin:-50px auto!important;
-}
-.btn-registrar{
-	width:100%;
-	margin:8px 0px;
-}
-.btn-cancel{
-	background-color:#535564!important;
-}
-.radio-sexo{
-	display:inline;
-}
-
-@media (max-width:500px){
-	.slogan{
-		font-size:25px;
-		text-align:center;
-	}
-	.logo-health{
-		margin: 20px auto 25px;
-	}
-	main{
-		background:transparent;
-	}
-	.mymodal{
-		position:absolute;
-		top:-200px;
-	}
+.open-sidebar .sidebar{
+	left:0;
 }

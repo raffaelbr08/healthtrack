@@ -66,7 +66,7 @@ $(document).ready(function(){
     });
 
     if( $(window).width() < 992 ){
-        nowuiKit.initRightMenu();
+        nowuiKit.initLeftMenu();
     }
 
     if ($(window).width() >= 992){

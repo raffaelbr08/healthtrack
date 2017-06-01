@@ -1,0 +1,124 @@
+body{
+	margin:0;
+	padding:0;		
+	font-size:16px;
+	font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+	color:#535564;
+}
+
+main{
+	background-image: url("../img/bg.jpg");
+	background-repeat:no-repeat;		
+ 	background-position: center center;
+    background-size: cover;      
+    position: absolute;  
+}
+
+.cover-bg{
+	background-color: rgba(0, 209, 172, 0.9);
+	min-height: 100%;
+    min-width: 100%;
+    position: absolute; 
+}
+
+/* TIPOGRAFY */
+h1,h2,h3,h4 {	
+	color:#238B75;
+	font-weight:bold;	
+}
+p{
+	margin:0;
+	color:#535564;
+}
+
+/*GERAL COLORS*/
+.bg-blue{
+	background-color:#31B998!important;
+}
+.bg-blue-b{
+	background-color:#1CA082!important;
+}
+
+.red{
+	color:#FF4B4B
+}
+
+.blue{
+	color:#1CA082!important;
+}
+
+.cinza{
+	color:#535564;
+	}
+
+
+/*PAGINA INICIAL*/
+.logo-health{
+	width:300px;
+	margin:50px auto 50px;	
+}
+
+/*     //LOGIN FORM\\       */
+.login{
+	max-width:400px;
+	margin:60px auto;
+	background-color:white;
+	padding:20px;
+	border-radius:10px;
+	-webkit-box-shadow: 7px 3px 22px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 3px 22px -9px rgba(0,0,0,0.75);
+	box-shadow: 7px 3px 22px -9px rgba(0,0,0,0.75);
+}
+
+.login .btn-login{	
+	width:100%;
+	font-size:17px;	
+}
+
+input.input-login:focus{
+	border:none!important;
+}
+
+.login .btn-login:hover{
+	background-color:#1CA082!important;
+}
+/*     //LOGIN FORM\\       */
+
+
+/*     //REGISTER FORM\\       */
+.mymodal{
+	margin:-50px auto!important;
+}
+.btn-register{
+width:100%;
+margin-top:10px;
+}
+
+.btn-cancel{
+	background-color:#535564!important;
+}
+.radio-sexo{
+	display:inline;
+}
+/*     //REGISTER FORM\\       */
+
+@media (max-width:500px){
+	.cover-bg{
+		background-color:transparent!important;
+	}
+	main{
+		background-image:none!important;
+	}
+	.slogan{
+		font-size:25px;
+		text-align:center;
+	}
+	.logo-health{
+		margin: 20px auto 25px;
+	}	
+	.mymodal{
+		position:absolute;
+		top:-200px;
+	}
+	
+}

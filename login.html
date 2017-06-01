@@ -5,45 +5,60 @@
 	<title>Helth Track Z Login</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="assets/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style/demo.css">
-	<link rel="stylesheet" href="style/now-ui-kit.css">
+	<link rel="stylesheet" href="assets/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">	
+	<link rel="stylesheet" href="assets/css/now-ui-kit.css">
 	
+	<!-- fonts and icons -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet">
-	<link rel="stylesheet" href="assets/fonts.css">
-	<link rel="stylesheet" href="style/style.css">
+    <!-- Style me -->	
+	<link rel="stylesheet" href="style/login.css">
 </head>
 <body>
+
 	<main>
-		<div class="cover-bg">
-			<div class="container">
-				<div class="logo-health">
-					<img src="img/logo-app.png" alt="" class="img-fluid">
-				</div>
-			
-				<h1 class="text-md-center slogan">O melhor aplicativo para controlar sua saude.</h1>
+		<div class="cover-bg"><!-- cover opacity-->			
+				<div class="container">
+					<header>
+						<div class="logo-health">
+							<img src="img/logo-app.png" alt="" class="img-fluid">
+						</div>
+					
+						<h1 class="text-md-center slogan">O melhor aplicativo para controlar sua saude.</h1>
+					</header>
+					<article>
+						<div class="login">
+							<form>	
+								<h3 class="text-md-center blue">Login</h3>			
+							  <div class="form-group">
+							    <div class="input-group form-group-no-border">
+		                            <span class="input-group-addon">
+		                                 <i class="now-ui-icons users_circle-08"></i>
+		                            </span>
+		                            <input type="text" class="form-control" class="input-login"  placeholder="Username ou Email">
+		                        </div>
+		                      </div>
+							  <div class="form-group">
+							    <div class="input-group form-group-no-border">
+		                            <span class="input-group-addon">
+		                                 <i class="now-ui-icons ui-1_lock-circle-open"></i>
+		                            </span>
+		                            <input type="text" class="form-control" class="input-login" placeholder="Password">
+		                        </div>
+		                      </div>
+		                      <button class="btn btn-primary bg-blue btn-login btn-round">
+								<i class="now-ui-icons ui-2_favourite-286"></i> Entrar
+							  </button>					  
+							  <br><br>
+							</form>					
+							<p class="text-md-center" data-toggle="modal" data-target="#myModal">Cadastrar-se</p>
+							<p class="text-md-center">Esqueci a senha</p>
+						</div>
+					</article>
+				</div>	<!-- end container -->
 
-				<div class="login">
-					<form>	
-						<h3 class="text-md-center blue">Login</h3>			
-					  <div class="form-group">
-					    <label for="form-username">Nome:</label>
-					    <input type="text" class="form-control" id="form-username" placeholder="Email ou Username" class="input-login">
-					  </div>
-					  <div class="form-group">
-					    <label for="form-password">Senha:</label>
-					    <input type="text" class="form-control" id="form-password" placeholder="Password" class="input-login">
-					  </div>
-					  <button class="btn bg-blue btn-login">Entrar</button>
-					  <br><br>
-					</form>					
-					<p class="text-md-center" data-toggle="modal" data-target="#myModal">Cadastrar-se</p>
-					<p class="text-md-center">Esqueci a senha</p>
-				</div>
-			</div>	<!-- end container -->
-
-			<!-- Modal Core -->
+			<!-- Modal Register -->
 			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			  <div class="modal-dialog mymodal">
 			    <div class="modal-content">
@@ -91,9 +106,19 @@
 					  <div class="form-group">
 					    <label for="form-username">Senha:</label>
 					    <input type="password" class="form-control" id="form-username" placeholder="Password" class="input-login">
-					  </div>					  
-					  <button class="btn bg-blue btn-registrar">Registrar</button>
-					  <button class="btn btn-cancel btn-registrar">Cancelar</button>
+					  </div>
+					  <div class="row">		
+						<div class="col-md-6">	  
+							<button class="btn bg-blue btn-register btn-round">
+								<i class="now-ui-icons ui-2_favourite-286"></i> Entrar
+							</button>
+						</div>	
+						<div class="col-md-6">
+							<button class="btn btn-cancel btn-register btn-round">
+								<i class="now-ui-icons ui-2_favourite-286"></i> Cancelar
+							</button>
+						</div>
+					  </div>	
 					  <br><br>
 					</form>			
 			      </div>			      
@@ -104,7 +129,8 @@
 	</main>
 	
 	<script src="assets/js/core/jquery.3.2.1.min.js"></script>
-	<script src="assets/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+	<script src="assets/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>	
 	<script src="assets/js/now-ui-kit.js"></script>
+	<script src="/assets/js/now-ui-kit.js" type="text/javascript"></script>
 </body>
 </html>

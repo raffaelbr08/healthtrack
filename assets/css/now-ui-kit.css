@@ -1190,7 +1190,7 @@
 .has-success .form-control {
   border-color: #E3E3E3; }
 .form-control:focus {
-  border: 1px solid #f96332;
+  border: 1px solid #31B998;
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: 0 !important;
@@ -1278,7 +1278,7 @@
   border: medium none; }
 .form-group.form-group-no-border .form-control:focus, .form-group.form-group-no-border .form-control:active, .form-group.form-group-no-border .form-control:active, .form-group.form-group-no-border .form-control + .input-group-addon:focus, .form-group.form-group-no-border .form-control + .input-group-addon:active, .form-group.form-group-no-border .form-control + .input-group-addon:active, .input-group.form-group-no-border .form-control:focus, .input-group.form-group-no-border .form-control:active, .input-group.form-group-no-border .form-control:active, .input-group.form-group-no-border .form-control + .input-group-addon:focus, .input-group.form-group-no-border .form-control + .input-group-addon:active, .input-group.form-group-no-border .form-control + .input-group-addon:active {
   border: medium none;
-  background-color: rgba(222, 222, 222, 0.5); }
+  background-color: rgba(222, 222, 222, 0.4); }
 .form-group.form-group-no-border .form-control:focus + .input-group-addon, .input-group.form-group-no-border .form-control:focus + .input-group-addon {
   background-color: rgba(222, 222, 222, 0.5); }
 .form-group.form-group-no-border .input-group-addon, .input-group.form-group-no-border .input-group-addon {
