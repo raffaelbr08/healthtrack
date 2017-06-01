@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Helth Track Z Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="assets/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style/demo.css">
+	<link rel="stylesheet" href="style/now-ui-kit.css">
+	
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet">
+	<link rel="stylesheet" href="assets/fonts.css">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<main>
+		<div class="cover-bg">
+			<div class="container">
+				<div class="logo-health">
+					<img src="img/logo-app.png" alt="" class="img-fluid">
+				</div>
+			
+				<h1 class="text-md-center slogan">O melhor aplicativo para controlar sua saude.</h1>
+
+				<div class="login">
+					<form>	
+						<h3 class="text-md-center blue">Login</h3>			
+					  <div class="form-group">
+					    <label for="form-username">Nome:</label>
+					    <input type="text" class="form-control" id="form-username" placeholder="Email ou Username" class="input-login">
+					  </div>
+					  <div class="form-group">
+					    <label for="form-password">Senha:</label>
+					    <input type="text" class="form-control" id="form-password" placeholder="Password" class="input-login">
+					  </div>
+					  <button class="btn bg-blue btn-login">Entrar</button>
+					  <br><br>
+					</form>					
+					<p class="text-md-center" data-toggle="modal" data-target="#myModal">Cadastrar-se</p>
+					<p class="text-md-center">Esqueci a senha</p>
+				</div>
+			</div>	<!-- end container -->
+
+			<!-- Modal Core -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog mymodal">
+			    <div class="modal-content">
+			      <div class="modal-header">			       		    
+			      </div>
+			      <div class="modal-body">
+			        <form>	
+						<h3 class="text-md-center cinza">Criar uma nova conta</h3>			
+					  <div class="form-group">
+					    <label for="form-username">Nome Completo:</label>
+					    <input type="text" class="form-control" id="form-username" placeholder="Email ou Username" class="input-login">
+					  </div>
+					  <div class="form-group">
+					    <label for="form-password">Usuario:</label>
+					    <input type="text" class="form-control" id="form-password" placeholder="Password" class="input-login">
+					  </div>
+					  <div class="row">
+					  	<div class="col-md-6 col-xs-12">
+						  <label for="form-sexo">Sexo:</label><br>
+						  	<div class="radio radio-sexo">
+							    <input type="radio" name="radio1" id="radio1" class="inline" value="option1">
+							    <label for="radio1">
+							        Masculino
+							    </label>
+							</div>
+
+							<div class="radio radio-sexo">
+							    <input type="radio" name="radio1" id="radio2" value="option2" checked="true">
+							    <label for="radio2">
+							        Feminino
+							    </label>
+							</div>
+						</div><!-- end col 6 -->
+						<div class="col-md-6 col-xs-12">
+							<div class="form-group">
+							    <label for="form-username">Idade:</label>
+							    <input type="number" class="form-control" id="form-username" placeholder="18 anos" class="input-login">
+							 </div>							
+						</div>
+					  </div><!-- end row -->
+					  <div class="form-group">
+					    <label for="form-username">Email:</label>
+					    <input type="email" class="form-control" id="form-username" placeholder="Email" class="input-login">
+					  </div>
+					  <div class="form-group">
+					    <label for="form-username">Senha:</label>
+					    <input type="password" class="form-control" id="form-username" placeholder="Password" class="input-login">
+					  </div>					  
+					  <button class="btn bg-blue btn-registrar">Registrar</button>
+					  <button class="btn btn-cancel btn-registrar">Cancelar</button>
+					  <br><br>
+					</form>			
+			      </div>			      
+			    </div>
+			  </div>
+			</div>
+		</div><!-- end cover-bg-->
+	</main>
+	
+	<script src="assets/js/core/jquery.3.2.1.min.js"></script>
+	<script src="assets/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+	<script src="assets/js/now-ui-kit.js"></script>
+</body>
+</html>
