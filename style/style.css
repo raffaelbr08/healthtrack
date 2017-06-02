@@ -1,10 +1,47 @@
-@import url("login.css");
-@import url("profile.css");
+body{
+	margin:0;
+	padding:0;		
+	font-size:16px;
+	font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+	color:#535564;
+}
+
+
+/* TIPOGRAFY */
+h1,h2,h3,h4 {	
+	color:#238B75;
+	font-weight:bold;	
+}
+p{
+	margin:0;
+	color:#535564;
+}
+
+/*GERAL COLORS*/
+.bg-blue{
+	background-color:#31B998!important;
+}
+.bg-blue-b{
+	background-color:#1CA082!important;
+}
+
+.red{
+	color:#FF4B4B
+}
+
+.blue{
+	color:#1CA082!important;
+}
+
+.cinza{
+	color:#535564;
+}
+
 
 /*side bar */
 .sidebar{
-	width:40%;
-	max-width:100px;	
+	width:50%;
+	max-width:120px;	
 	height:100%;
 	position:fixed;
 	left:-800px;
@@ -29,7 +66,7 @@
 }
 .sidebar .nav .nav-item:hover{
 	background-color:#1CA082!important;	
-	width:110px;
+	width:120px;
 	z-index:110;	
 	-webkit-box-shadow: 7px 3px 22px -9px rgba(0,0,0,0.75);
 	-moz-box-shadow: 7px 3px 22px -9px rgba(0,0,0,0.75);
@@ -62,4 +99,21 @@
 
 .open-sidebar .sidebar{
 	left:0;
+}
+
+@media (min-width:800px){
+	nav{
+		min-height: 100%;
+	}
+	.sidebar{
+		position:inherit;
+		float:left;		
+		height:100vh;
+	}
+	.view-content{
+		margin-left:119px;
+	}
+	header{
+		display:none;
+	}	
 }
