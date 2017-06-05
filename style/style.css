@@ -1,3 +1,5 @@
+@import url(dashboard.css);
+
 body{
 	margin:0;
 	padding:0;		
@@ -6,6 +8,9 @@ body{
 	color:#535564;
 }
 
+section{
+	padding:40px 0px;
+}
 
 /* TIPOGRAFY */
 h1,h2,h3,h4 {	
@@ -15,6 +20,23 @@ h1,h2,h3,h4 {
 p{
 	margin:0;
 	color:#535564;
+}
+
+.title{
+	font-size:2rem;	
+	color:white;
+	margin-bottom:10px!important;
+}
+
+.sub-title{
+	font-size:1.3rem;	
+	color:#535564;	
+	margin-bottom:25px!important;
+}
+
+.bg-header{
+	padding:13px 15px;
+	margin-bottom:10px;	
 }
 
 /*GERAL COLORS*/
@@ -31,10 +53,12 @@ p{
 
 .blue{
 	color:#1CA082!important;
+	font-weight:bold;
 }
 
 .cinza{
 	color:#535564;
+	font-weight:bold;
 }
 
 
@@ -51,7 +75,7 @@ p{
 }
 .sidebar .sidebar-header{
 	background-color:white;
-	height:80px;
+	height:70px;
 	width:100%;	
 	text-align:center;
 }
@@ -101,7 +125,35 @@ p{
 	left:0;
 }
 
-@media (min-width:800px){
+.header {
+	width:100%;
+	padding:0 10px;
+	height:70px;
+	background-color:#31B998!important;
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:10px;
+}
+.offcanvas{
+	display:flex;
+	align-items: center;
+}
+.offcanvas .item{
+	font-size:2rem;
+	color:white;
+}
+.welcome{
+	padding:10px 0px;	
+}
+
+@media (max-width:400px){
+	.container.content{
+		padding:0px!important;
+	}
+}
+
+
+@media (min-width:500px){
 	nav{
 		min-height: 100%;
 	}

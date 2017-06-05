@@ -1,0 +1,20 @@
+/*PROFILE*/
+.profile{
+	display:flex;
+	justify-content:space-around;
+	align-items: center;
+}
+.profile .photo-profile{
+	max-width:200px;
+}
+.profile .photo-profile img{
+	border-radius:50px;
+}
+
+/*DASHBOARD*/
+.dashboard{	
+
+}
+.dashboard .atividades{
+	margin-bottom:40px;
+}
