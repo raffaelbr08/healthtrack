@@ -68,7 +68,7 @@ input.input-login:focus{
 
 @media (max-width:500px){	
 	main{
-		background-image:none!important;
+		
 	}
 	.slogan{
 		font-size:25px;

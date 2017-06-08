@@ -142,16 +142,12 @@ p{
 	font-size:2rem;
 	color:white;
 }
-.welcome{
-	padding:10px 0px;	
-}
 
 @media (max-width:400px){
 	.container.content{
 		padding:0px!important;
 	}
 }
-
 
 @media (min-width:500px){
 	nav{
@@ -165,7 +161,7 @@ p{
 	.view-content{
 		margin-left:119px;
 	}
-	header{
+	header#top-header{
 		display:none;
 	}	
 }
