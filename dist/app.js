@@ -7,17 +7,13 @@ $(function(){
 
 	$('.js-open-sidebar').click(function(){		
 		$('html').addClass('open-sidebar');
-	})
-
-
-
-
+	});
 
 	//LOADS PAGES
 	$("#view").load("dashboard.html", function(){
-				
-	});
 		
+	});
+
 });
 
 	
