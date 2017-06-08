@@ -1,4 +1,6 @@
 @import url(dashboard.css);
+@import url(footer.css);
+@import url(profile.css);
 
 body{
 	margin:0;
@@ -9,7 +11,11 @@ body{
 }
 
 section{
-	padding:40px 0px;
+	padding:40px 0px 0px 0px;
+}
+
+section#info{
+	padding:10px 0px;
 }
 
 /* TIPOGRAFY */
@@ -32,6 +38,7 @@ p{
 	font-size:1.3rem;	
 	color:#535564;	
 	margin-bottom:25px!important;
+	padding-left:10px;
 }
 
 .bg-header{
@@ -142,16 +149,13 @@ p{
 	font-size:2rem;
 	color:white;
 }
-.welcome{
-	padding:10px 0px;	
-}
 
-@media (max-width:400px){
+
+@media (max-width:500px){
 	.container.content{
 		padding:0px!important;
 	}
 }
-
 
 @media (min-width:500px){
 	nav{
@@ -164,8 +168,14 @@ p{
 	}
 	.view-content{
 		margin-left:119px;
+		background-color:white;
 	}
-	header#header-dash{
+
+	.cover-bg{
+		background-color:#238B75;;
+	}
+
+	header#header-dash{	
 		display:none;
 	}	
 }

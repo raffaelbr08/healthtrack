@@ -10,7 +10,7 @@
 					<img src="img/profile.png" alt="" class="img-fluid">
 				</div>
 				<div class="info-profile">
-					<h3 class="sub-title"> Marcos Antonio</h3>		
+					<h3 class="sub-title">Marcos Antonio</h3>		
 					<p>
 					<i class="now-ui-icons ui-1_calendar-60"></i>
 					<span>18 anos</span>
@@ -19,7 +19,7 @@
 					<i class="now-ui-icons users_single-02"></i>
 					<span>1,72 Altura</span>
 					</p>	
-					<button class="btn bg-blue">Editar Perfil</button>
+					<button class="btn bg-blue" id="edit-profile" onclick="viewProfile()">Editar Perfil</button>
 				</div>
 			</div>
 		</article>
@@ -85,6 +85,19 @@
 			</article>	
 
 		</section>
+
+		<section id="info">
+			<h3 class="sub-title cinza">Noticias</h3>
+		</section>
 	</div>
 
 </div>
+
+<script>
+
+	function viewProfile() {
+	    $("#view").load("profile.html", function(){
+			
+		});
+	}
+</script>
