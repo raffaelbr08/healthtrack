@@ -165,7 +165,7 @@ p{
 	.view-content{
 		margin-left:119px;
 	}
-	header{
+	header#header-dash{
 		display:none;
 	}	
 }
