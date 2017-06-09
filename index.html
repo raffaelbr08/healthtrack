@@ -41,12 +41,12 @@
 
 						<ul class="nav">
 							<li class="nav-item">
-							<a href="#" class="nav-link">
+							<a href="#" class="nav-link" onclick="viewDash()">
 							<i class="fa fa-user" aria-hidden="true"></i>
 							</a>
 							</li>
 							<li class="nav-item">
-							<a href="#" class="nav-link"><i class="fa fa-heartbeat" aria-hidden="true"></i></a>
+							<a href="#" class="nav-link" onclick="viewPressao()"><i class="fa fa-heartbeat" aria-hidden="true"></i></a>
 							</li>
 							<li class="nav-item">
 							<a href="#" class="nav-link"><i class="fa fa-cutlery" aria-hidden="true"></i></a>
@@ -86,9 +86,24 @@
 	<script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
 
 	<!-- uiKit Plugin -->
-	<script src="./assets/js/now-ui-kit.js" type="text/javascript"></script>	
+	<script src="assets/js/now-ui-kit.js" type="text/javascript"></script>	
+	<script src="assets/js/plugins/nouislider.min.js"></script>
+	<script src="assets/js/plugins/bootstrap-datepicker.js"></script>
 	
 	<script src="dist/app.js"></script>
+
+	<script>	
+		function viewDash() {
+		    $("#view").load("dashboard.html", function(){
+				
+			});
+	    }
+	    function viewPressao() {
+		    $("#view").load("register-pressao.html", function(){
+				
+			});
+	    }
+	</script>
 
 </body>
 </html>

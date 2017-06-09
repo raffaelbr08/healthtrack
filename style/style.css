@@ -1,6 +1,7 @@
 @import url(dashboard.css);
 @import url(footer.css);
 @import url(profile.css);
+@import url(registers.css);	
 
 body{
 	margin:0;
@@ -10,8 +11,8 @@ body{
 	color:#535564;
 }
 
-section{
-	padding:40px 0px 0px 0px;
+section#dashboard{
+	padding:20px 0px;
 }
 
 section#info{
@@ -23,6 +24,7 @@ h1,h2,h3,h4 {
 	color:#238B75;
 	font-weight:bold;	
 }
+
 p{
 	margin:0;
 	color:#535564;
@@ -40,6 +42,14 @@ p{
 	margin-bottom:25px!important;
 	padding-left:10px;
 }
+
+.sub-form{
+	font-size:1rem;	
+	color:#535564;	
+	margin-bottom:8px!important;
+	padding-left:10px;
+}
+
 
 .bg-header{
 	padding:13px 15px;

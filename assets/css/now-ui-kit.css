@@ -280,7 +280,7 @@
 /* Slider size and handle placement;
  */
 .noUi-horizontal {
-  height: 1px; }
+  height: 9px; }
 
 .noUi-horizontal .noUi-handle {
   border-radius: 50%;
@@ -308,10 +308,11 @@
   border-radius: 3px; }
 
 .noUi-connect {
-  background: #B8B8B8;
-  border-radius: 3px;
-  -webkit-transition: background 450ms;
-  transition: background 450ms; }
+  background: #31B998!important;
+    border-radius: 3px;
+    -webkit-transition: background 450ms;
+    transition: background 450ms;
+}
 
 /* Handles and cursors;
  */
