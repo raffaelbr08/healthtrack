@@ -1,0 +1,52 @@
+.edit-photo{
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom:50px;
+}
+
+.edit-photo .photo{
+	max-width:200px;
+	border:2px solid #d4d4d4;
+	border-radius:10px;
+}
+
+.edit-photo .input-file{
+	max-width:400px;
+	margin-left:40px;
+}
+
+.input-file input{
+	margin-bottom: 10px;
+	border:1px solid #d4d4d4;
+	border-radius:5px;
+	margin-right:10px;	
+	width:250px;
+	height:35px;
+}
+
+.btn-send-file{
+	height:35px;
+}
+
+input.input-fat{
+	max-width:85px;
+	color:white;
+	border-radius:5px;
+}
+input.input-fat::placeholder{
+	color:white!important;
+}
+
+p.fat{
+	margin-top:10px;
+	font-weight:normal;
+}
+
+.slider-content{
+	margin-left:10px;
+}
+
+.objetive{
+	padding:50px 0px;
+}
