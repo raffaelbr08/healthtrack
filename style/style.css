@@ -184,7 +184,8 @@ p{
 	.cover-bg{
 		background-color:#238B75;;
 	}
-	header#top-header{
+
+	header#header-dash{	
 		display:none;
 	}	
 }
